@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="..\..\node_modules\vue\dist\vue.js"></script>
+    <style>
+        .card{
+            width: 200px;
+            background: #ccc;
+            padding:20px;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id='app'>
+        <div v-pin:true.bottom.right="card1.pinned" class="card">
+            <button @click="card1.pinned = !card1.pinned"><div v-if="card1.pinned==true">取消</div><div v-else>钉住</div></button>
+            Lorem ipsum dolor sit, amet213123
+        </div>
+        <div v-pin="card2.pinned" class="card">
+            <button @click="card2.pinned = !card2.pinned"><div v-if="card2.pinned==true">取消</div><div v-else>钉住</div></button>
+            Lorem ipsum dolor sit, amet12
+        </div>
+        <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore ipsa illum eveniet expedita voluptatem deleniti alias, distinctio ex veritatis, voluptatibus dolorem mollitia error assumenda, sunt nihil voluptate praesentium consequatur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit inventore delectus aliquam nihil eligendi perspiciatis et possimus itaque molestiae dicta quos ab, eveniet illum iste veritatis assumenda! Sunt, autem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit inventore delectus aliquam nihil eligendi perspiciatis et possimus itaque molestiae dicta quos ab, eveniet illum iste veritatis assumenda! Sunt, autem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit inventore delectus aliquam nihil eligendi perspiciatis et possimus itaque molestiae dicta quos ab, eveniet illum iste veritatis assumenda! Sunt, autem!
+                
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
